@@ -1,0 +1,146 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
+}
+#container{
+    width: 100%;
+    height: 100%;
+
+    display: table;
+    overflow: hidden;
+
+}
+/*************************************unitContainer*******************************************/
+.unitContainer {
+    position: absolute;
+    /*top: 60px;*/
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.headerBar {
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+}
+hr.curl {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    margin-top: -1px;
+}
+.unit {
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.25);
+    background-color: white;
+}
+.unitHeadline {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+.unitTextContainer {
+    display: table;
+    height: 90px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.1);
+}
+.unitText {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    width: 200px;
+}
+.unitFooter {
+    height: 30px;
+    line-height: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-image: url(icons/library.png);
+    background-size: 20px 20px;
+    background-position: 12px 5px;
+    background-repeat: no-repeat;
+    color: rgba(0,0,0,.5);
+    cursor:pointer;
+}
+/*********************************************************************************************/
+/*************************************mainContainer*******************************************/
+.mainContainer {
+    position: relative;
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.2);
+    padding: 10px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    text-align:left;
+    /* margin-bottom: 50px !important; */
+    display: table;
+    height: 100%;
+}
+.mainContainer.right {
+  width: calc(100% - 388px);
+  float: right;
+  right: 10px;
+}
+.headline {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.mainContainerLeft {
+  position: absolute;
+  margin: 10px auto;
+  left: 48px;
+  height: 100%;
+  background-color: rgba(255,255,255,.2);
+  width: 300px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: width .25s, left .25s;
+}
+.mainContainerLeft .headline {
+    margin-top: 0px;
+}
+.contentLeft {
+  background-color: rgba(255,255,255,.5);
+  padding: 10px;
+  margin: 5px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.contentLeft h3{
+    color: rgba(0,0,0,.5);
+}
+.contentLeft p {
+    text-align:left;
+    font-size: 12px;
+}
+
+/*********************************************************************************************/
